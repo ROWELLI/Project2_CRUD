@@ -1,0 +1,26 @@
+.video-container {
+    display: flex;
+    justify-content: center; /* 가로 중앙 정렬 */
+    align-items: center; /* 세로 중앙 정렬 */
+    height: 350px; /* 화면 높이에 따라 조절할 수 있습니다. */
+}
+
+.text-container {
+    margin-top: 0px;
+    display: flex;
+    justify-content: center; /* 가로 중앙 정렬 */
+    align-items: center; /* 세로 중앙 정렬 */
+}
+
+.index-container {
+    margin-top: 0px;
+    width: 300px;
+    margin-bottom: 30px;
+}
+
+.song-title {
+    color:#7bc1b2;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 0px;
+}

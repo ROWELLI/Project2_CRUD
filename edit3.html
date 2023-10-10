@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="add.css">
+    <title>My Playlist - Add Music</title>
+    <script>
+        function moveToHome() {
+            window.location.href = 'index.html';
+        }
+        function displayFileName() {
+            const fileInput = document.getElementById("coverimg");
+            const fileNameDisplay = document.getElementById("filename");
+
+            if (fileInput.files.length > 0) {
+                const fileName = fileInput.files[0].name;
+                fileNameDisplay.textContent = `${fileName}`;
+            } else {
+                fileNameDisplay.textContent = "Select cover image";
+            }
+        }
+
+        function validateForm() {
+            var fileName = document.getElementById("coverimg").value.trim();
+            var songName = document.getElementsByName("songname")[0].value.trim();
+            var singerName = document.getElementsByName("singername")[0].value.trim();
+            var selectedGenre = document.querySelector('input[type="radio"][name="genre"]:checked');
+            if (!songName) {
+                alert("노래 제목을 입력하세요.");
+                return false;
+            }
+
+            else if (!singerName) {
+                alert("가수를 입력하세요.");
+                return false;
+            }
+            return true;
+        }
+
+        function addsong() {
+            var confirmation = confirm("게시물을 수정할까요?");
+
+            if (confirmation) {
+                if (validateForm()) {
+                    window.location.href = 'index.html';
+                }
+            } 
+        }
+        // 페이지 로드 후 입력란 초기값 설정
+        window.onload = function() {
+            // 곡 이름 입력란 초기값 설정
+            var songNameInput = document.getElementsByName("songname")[0];
+            songNameInput.value = "NIGHT DANCER";
+
+            // 가수 이름 입력란 초기값 설정
+            var singerNameInput = document.getElementsByName("singername")[0];
+            singerNameInput.value = "imase";
+        };
+    </script>
+</head>
+<body>
+    <div class="image-with-text">
+        <img src="title_logo.svg" alt="" class="image">
+        <div class="title">My Playlist</div>
+    </div>
+    <div class="top-rectangle">
+        <div class="sub_title">Edit Music</div>
+    </div>
+    <div class="content-rectangle">
+        <div class="content sub-content">Photo for cover</div>
+        <br>
+        <div class="sub-input">
+            <label for="coverimg" class="custom-file-upload">
+                Select file
+            </label>
+            <input type="file" id="coverimg" name="coverimg" onchange="displayFileName()">
+            <div class="left-space">
+                <div class="text-color">
+                    <p id="filename">night_dancer.jpg</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-rectangle">
+        <div class="content sub-content">Name of the song</div>
+        <br>
+        <div class="sub-text place-center">
+            <input type="text" name="songname" placeholder="Type your song name here">
+        </div>
+    </div>
+
+    <div class="content-rectangle">
+        <div class="content sub-content">The musician name</div>
+        <br>
+        <div class="sub-text place-center">
+            <input type="text" name="singername" placeholder="Type the singer name here">
+        </div>
+    </div>
+    <div class="end-rectangle">
+        <div class="content sub-content">Genre of the song</div>
+        <br>
+        <div class="sub-select">
+            <input type="radio" id="genre1" name="genre" value="1">
+            <label for="genre1" class="radio-container">
+                <div class="radio-circle"></div>
+                POP
+            </label>
+        
+            <input type="radio" id="genre2" name="genre" value="2">
+            <label for="genre2" class="radio-container">
+                <div class="radio-circle"></div>
+                K-POP
+            </label>
+        
+            <input type="radio" id="genre3" name="genre" value="3" checked>
+            <label for="genre3" class="radio-container">
+                <div class="radio-circle"></div>
+                J-POP
+            </label>
+        
+            <input type="radio" id="genre4" name="genre" value="4">
+            <label for="genre4" class="radio-container">
+                <div class="radio-circle"></div>
+                HIPHOP
+            </label>
+        
+            <input type="radio" id="genre5" name="genre" value="5">
+            <label for="genre5" class="radio-container">
+                <div class="radio-circle"></div>
+                CLASSIC
+            </label>
+        
+            <input type="radio" id="genre6" name="genre" value="6">
+            <label for="genre6" class="radio-container">
+                <div class="radio-circle"></div>
+                ROCK
+            </label>
+        
+            <input type="radio" id="genre7" name="genre" value="7">
+            <label for="genre7" class="radio-container">
+                <div class="radio-circle"></div>
+                R&B
+            </label>
+        
+            <input type="radio" id="genre8" name="genre" value="8">
+            <label for="genre8" class="radio-container">
+                <div class="radio-circle"></div>
+                JAZZ
+            </label>
+        
+            <input type="radio" id="genre9" name="genre" value="9">
+            <label for="genre9" class="radio-container">
+                <div class="radio-circle"></div>
+                COLLECTION
+            </label>
+        </div>
+        <div class="sub-input"></div>        
+    </div>
+    <div class="row-range">
+        <div class="back-button back-container" onclick="moveToHome()">Back</div>
+        <div class="save-button save-container" onclick="addsong()">Save</div>
+    </div>
+</body>
+</html>

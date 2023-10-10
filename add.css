@@ -1,0 +1,187 @@
+.top-rectangle {
+    margin-left: 5%;
+    margin-right: 5%;
+    position: relative;
+    width: 90%;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    background-color: white;
+    border-bottom: 2px solid #7bc1b2;
+    overflow: hidden;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 0px;
+}
+
+.content-rectangle {
+    margin-top: 0px;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+    background-color: white;
+    border-bottom: 2px solid #7bc1b2;
+    overflow: hidden;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.sub-content {
+    margin-left: 4vw;
+    height: 80px;
+    display: inline-flex; 
+    align-items: center; 
+}
+
+.sub-input {
+    
+    margin-left: 4vw;
+    display: inline-flex; 
+    align-items: center; 
+    margin-bottom: 30px;
+}
+
+.end-rectangle {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    background-color: white;
+    border-bottom: 2px solid #7bc1b2;
+    overflow: hidden;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.custom-file-upload {
+    background-color: #f96c6c;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.custom-file-upload:hover {
+    filter: brightness(0.8);
+}
+
+#coverimg {
+    display: none;
+}
+
+.left-space {
+    margin-left: 20px;
+}
+
+.place-center {
+    display: flex;
+    justify-content: center; /* 가로 가운데 정렬 */
+    align-items: center; /* 세로 가운데 정렬 */
+}
+/* songname 입력란 스타일 */
+.sub-text input[type="text"] {
+    margin-bottom: 30px;
+    width: 80vw; /* 입력란을 부모 요소에 꽉 차게 설정 */
+    padding: 10px; /* 내부 여백 추가 */
+    border: none; /* 기존 테두리 제거 */
+    border-bottom: 1.5px solid #ccc; /* 테두리 추가 */
+    font-size: 16px; /* 글꼴 크기 설정 */
+    color: #333; /* 텍스트 색상 설정 */
+    transition: border-color 0.3s ease;
+}
+
+/* 선택 시 입력란 테두리 스타일 */
+.sub-text input[type="text"]:focus {
+    border-color: #f96c6c; /* 선택 시 테두리 색상 변경 */
+    outline: none; /* 선택 시 파란 테두리 제거 */
+}
+
+.sub-text input[type="text"]::placeholder {
+    color: #999; /* 원하는 색상으로 설정 */
+}
+
+.text-color {
+    color :#999;
+}
+
+.sub-select input[type="radio"] {
+    margin-left: 4vw;
+    margin-bottom: 10px; /* 각 라디오 버튼 아래에 여백 추가 */
+    appearance: none; /* 기본 라디오 버튼 스타일 제거 */
+}
+
+
+
+/* 라디오 버튼 컨테이너 스타일 */
+.sub-select .radio-container {
+    margin-left: 5vw;
+    display: flex;
+    align-items: center;
+    margin-bottom: 3px;
+    cursor: pointer;
+}
+
+/* 작은 원 스타일 */
+.sub-select .radio-container .radio-circle {
+    width: 15px;
+    height: 15px;
+    border: 1.5px solid #7bc1b2;
+    border-radius: 50%;
+    margin-right: 10px;
+    position: relative;
+}
+
+/* 작은 원 선택 시 스타일 */
+.sub-select input[type="radio"]:checked + .radio-container .radio-circle::after {
+    content: '';
+    width: 9px;
+    height: 9px;
+    background-color: #f96c6c;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.row-range {
+    display: flex;
+    justify-content: center; /* 가운데 정렬 */
+    margin-bottom: 30px;
+}
+
+.back-container,
+.save-container {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* 가운데 정렬 */
+}
+
+.back-button,
+.save-button {
+    margin-top: 30px;
+    background-color: #f96c6c;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    width: 70px;
+    height: 25px;
+    cursor: pointer;
+    margin-bottom: 80px;
+}
+
+/* 간격 추가 */
+.back-button {
+    margin-right: 20px;
+}
+
+.save-button {
+    margin-left: 20px;
+}
+
+.back-button:hover,
+.save-button:hover {
+    filter: brightness(0.8);
+}

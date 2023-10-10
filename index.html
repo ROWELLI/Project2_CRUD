@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+    <script>
+        // function deletesong() {
+        //     var confirmation = confirm("게시물을 삭제할까요?");
+        //     if (confirmation) {
+        //         if (validateForm()) {
+        //             window.location.href = 'index.html';
+        //         }
+        //         else{
+        //             window.location.href = 'index.html';
+        //         }
+        //     } 
+        // }
+        function deletesong(event) {
+            event.stopPropagation(); // 클릭 이벤트 전파 중단
+            var confirmation = confirm("게시물을 삭제할까요?");
+            if (confirmation) {
+                // 삭제 로직을 여기에 추가하세요
+            }
+        }
+
+        function moveToEdit1(event) {
+            event.stopPropagation(); // 클릭 이벤트 전파 중단
+            window.location.href = 'edit1.html';
+        }
+        function moveToAdd() {
+            window.location.href = 'add.html';
+        }
+        // function moveToEdit1() {
+        //     window.location.href = 'edit1.html';
+        // }
+        function moveToEdit2() {
+            window.location.href = 'edit2.html';
+        }
+        function moveToEdit3() {
+            window.location.href = 'edit3.html';
+        }
+        function moveToEdit4() {
+            window.location.href = 'edit4.html';
+        }
+        function moveToView1() {
+            window.location.href = 'view1.html';
+        }
+        function moveToView2() {
+            window.location.href = 'veiw2.html';
+        }
+        function moveToView3() {
+            window.location.href = 'veiw3.html';
+        }
+        function moveToView4() {
+            window.location.href = 'veiw4.html';
+        }
+    </script>
+</head>
+
+<body>
+    
+    <div class="image-with-text">
+        <img src="title_logo.svg" alt="" class="image">
+        <div class="title">My Playlist</div>
+        <div class="small-button place-right" onclick="moveToAdd()">Add</div>
+    </div>
+    <div class="white-rectangle">
+        <div class="sub_title">My Music</div>
+        <div class="image-with-text">
+            <div class="content container-cover">Cover</div>
+            <div class="content container-song">Song</div>
+            <div class="content container-song">Singer</div>
+            <div class="content container-genre">Genre</div>
+            <div class="content container-song">Menu</div>
+        </div>
+        
+        <button class="button line" onclick="moveToView1()">
+            <div class="container-cover">
+            <img src="https://i.scdn.co/image/ab67616d0000b2733ae51d6dc9ed5ffcf9988639" 
+            width=100px heignt=100px alt="Button Image"></div>
+            <div class="container-song">Sharks</div>            
+            <div class="container-song">Imagine Dragons</div>
+            <div class="container-genre">POP</div>
+            <div class="delete-img"><img src="delete_logo.svg" width="40px" onclick="deletesong(event)"></div>
+            <div class="add-img"><img src="add_logo.svg" width="40px" onclick="moveToEdit1(event)"></div>
+
+        </button>
+        <button class="button line">
+            <div class="container-cover">
+            <img src="https://image.bugsm.co.kr/album/images/500/40885/4088574.jpg" 
+            width=100px heignt=100px alt="Button Image"></div>
+            <div class="container-song">Super Shy</div>            
+            <div class="container-song">New Jeans</div>
+            <div class="container-genre">K-POP</div>
+            <div class="delete-img"><img src="delete_logo.svg" width="40px" onclick="deletesong()"></div>
+            <div class="add-img"><img src="add_logo.svg" width="40px" onclick="moveToEdit2()"></div>
+
+        </button>
+        <button class="button line">
+            <div class="container-cover">
+            <img src="https://i.namu.wiki/i/9w4ZfPzjCmzQVpzOAuTFKW0zSuuLcWNgYPgLT8rOXd_BNIA9tVh_cCUbLpD1LG6w33vT0JKgXBsh1Fxb0QeN5Q.webp" 
+            width=100px heignt=100px alt="Button Image"></div>
+            <div class="container-song">NIGHT DANCER</div>            
+            <div class="container-song">imase</div>
+            <div class="container-genre">J-POP</div>
+            <div class="delete-img"><img src="delete_logo.svg" width="40px" onclick="deletesong()"></div>
+            <div class="add-img"><img src="add_logo.svg" width="40px" onclick="moveToEdit3()"></div>
+
+        </button>
+        <button class="button line">
+            <div class="container-cover">
+            <img src="https://i.namu.wiki/i/jc4N1O02jN-C7FCYpJgRbBDGAOTB4rp8GcMjM0mnwz39D2rrq1QmAn5jrCky_wnmCTPU2SQTXdnPRySxS6uv6w.webp" 
+            width=100px heignt=100px alt="Button Image"></div>
+            <div class="container-song">All I Want for Christmas Is You</div>            
+            <div class="container-song">Mariah Carey</div>
+            <div class="container-genre">POP</div>
+            <div class="delete-img"><img src="delete_logo.svg" width="40px" onclick="deletesong()"></div>
+            <div class="add-img"><img src="add_logo.svg" width="40px" onclick="moveToEdit4()"></div>
+
+        </button>
+        <div class="line"></div>
+        <div class="add-margin"></div>
+    </div>
+
+        
+</body>
+</html>
