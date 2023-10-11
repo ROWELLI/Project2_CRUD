@@ -1,6 +1,6 @@
 .title {
     font-weight: bolder;
-    font-size: 40px;
+    font-size: 30px;
     color: #f96c6c;
 }
 
@@ -74,4 +74,59 @@
 
 .button img {
     margin-right: 30px;
+}
+
+.end-rectangle {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    width: 99%;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    background-color: white;
+    border-bottom: 2px solid #7bc1b2;
+    overflow: hidden;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.top-rectangle {
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    position: relative;
+    width: 99%;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    background-color: white;
+    border-bottom: 2px solid #7bc1b2;
+    overflow: hidden;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 0px;
+}
+
+.content-rectangle {
+    margin-top: 0px;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    width: 99%;
+    background-color: white;
+    border-bottom: 2px solid #7bc1b2;
+    overflow: hidden;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.small-button {
+    position: fixed; /* 화면 고정 위치로 설정 */
+    top: 60px; /* 화면 위에서 30px 떨어진 위치로 설정 */
+    right: 8vw; /* 화면 오른쪽에서 20px 떨어진 위치로 설정 */
+    background-color: #f96c6c;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    width: 30px;
+    z-index: 1; /* 다른 요소 위에 표시하기 위한 z-index 설정 */
 }
