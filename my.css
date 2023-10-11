@@ -1,0 +1,73 @@
+.title {
+    font-weight: bolder;
+    font-size: 40px;
+    color: #f96c6c;
+}
+
+.image {
+    width: auto;
+    height: 60px;
+    margin-left: 30px; 
+    margin-right:20px;
+}
+
+.image-size {
+    width: 40px;
+    height: 40px;
+}
+
+.sub_title {
+    margin-left: 50px;
+    margin-top: 30px;
+    color:#7bc1b2;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.content{
+    color:#7bc1b2;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+
+.container-cover {
+    margin-left: 20px;
+    width: 14vw;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    font-size: 15px;
+}
+
+.container-song {
+    margin-left:0px;
+    width: 18vw;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    font-size: 15px;
+}
+
+.container-genre {
+    margin-left:10px;
+    margin-right: 0px;
+    width: 12vw;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-right:10px;
+    font-size: 15px;
+}
+
+.white-rectangle {
+    margin-left: 2%;
+    margin-right: 2%;
+    position: relative;
+    width: 96%;
+    border-radius: 30px;
+    background-color: white;
+    overflow: hidden;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
